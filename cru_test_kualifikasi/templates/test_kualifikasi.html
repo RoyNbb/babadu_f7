@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block meta %}
+<title>Form Data Kualifikasi</title>
+{% endblock meta %}
+
+{% block content %}
+<div class="container" id="update_sesi_konsultasi_container" style="margin-bottom: 100px;">
+    <h1><b>Form Data Kualifikasi</b></h1>
+    <form method="post">
+    {% csrf_token %}
+
+        <div class="form-group">
+            <label for="no_batch">No Batch</label>
+            <input class="form-control" id="no_batch" name="no-batch" type="text" placeholder="No Batch">
+        </div> 
+
+        <div class="form-group">
+            <label for="no_rekam_medis">Tempat Pelaksanaan</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Pilih Tempat</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            {% comment %} <input class="form-control" id="no_rekam_medis" name="no_rekam_medis" type="text" placeholder="{{ row_sesi_konsultasi.no_rekam_medis_pasien }}" disabled> {% endcomment %}
+        </div>
+
+        <div class="form-group">
+            <label for="tanggal">Tanggal Pelaksanaan</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Pilih Tanggal</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            {% comment %} <input width="276" id="datepicker" type="text" name="tanggal" value="{{ row_sesi_konsultasi.tanggal }}" style="color: #78808c; font-family: Poppins"/>
+            <script>
+                $('#datepicker').datepicker({ format: 'yyyy-mm-dd' });
+            </script> {% endcomment %}
+        </div>
+        <button class="btn btn-primary" type="submit">NEXT</button>
+    </form>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    AOS.init();
+</script>
+{% endblock %}
