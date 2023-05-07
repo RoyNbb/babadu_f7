@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'example_app',
+    'bootstrap5',
+    'bootstrap_datepicker_plus',
+    'babadu',
 ]
 
 MIDDLEWARE = [

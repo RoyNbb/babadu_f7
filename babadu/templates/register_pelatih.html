@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <title>Registrasi Pelatih</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">\
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  {{ form.media }}
+</head>
+{% endblock meta %}
+
+{% block content %}
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+      <div class="container-fluid justify-content-center">
+        <a class="navbar-brand" href="#">FORM REGISTRASI PELATIH</a>
+      </div>
+    </nav>
+    <br>
+    <div class = "login">
+        <div class="container center_div">
+            <div class="row justify-content-center">
+                <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto form p-4">        
+                    <form method="POST" >  
+                        {% csrf_token %}             
+                            <div class="form-group">
+                              <label for="id_nama">Nama</label>
+                              <input type="text" class="form-control" name="nama" maxlength="50" required id="id_nama">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                              <label for="id_email">Email</label>
+                              <input type="text" class="form-control" name="email" maxlength="50" required id="id_email">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                              <label for="id_negara">Negara</label>
+                              <input type="text" class="form-control" name="negara" maxlength="50" required id="id_negara">
+                            </div>
+                            <br>
+                            <label>Kategori</label>
+                            <div id="id_kategori">
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="checkbox" name="kategori" id="id_kategori_0" value="5933d997-4412-4093-9e61-2d03593d2d0b" />
+                                  <label class="form-check-label" for="id_kategori_0">Tunggal Putra</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="checkbox" name="kategori" id="id_kategori_1" value="f83ee6a9-fc9c-4c19-911e-ac32072c7411" />
+                                  <label class="form-check-label" for="id_kategori_1">Tunggal Putri</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="checkbox" name="kategori" id="id_kategori_2" value="2198a216-8255-47b5-8862-cf6b630524bb" />
+                                  <label class="form-check-label" for="id_kategori_2">Ganda Putra</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="checkbox" name="kategori" id="id_kategori_3" value="49467f9f-378a-4185-9f7e-b2db9baf1e8a" />
+                                  <label class="form-check-label" for="id_kategori_3">Ganda Putri</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="checkbox" name="kategori" id="id_kategori_4" value="517dc110-4304-41db-9600-bca2590d395d" />
+                                  <label class="form-check-label" for="id_kategori_4">Ganda Campuran</label>
+                                </div>
+                            </div>
+                            <br>
+        
+                            <label class="control-label" for="id_tanggal_mulai">Tanggal Mulai</label>
+                            <div class="input-group dbdp"> <!-- Date input -->
+                              <input type="text" name="tanggal_mulai" required id="id_tanggal_mulai" data-dbdp-config="{&quot;variant&quot;: &quot;date&quot;, &quot;backend_date_format&quot;: &quot;YYYY-MM-DD&quot;, &quot;options&quot;: {}}" data-dbdp-debug="">
+                              <div class="input-group-addon input-group-append input-group-text">
+                                <i class="bi-calendar"></i>
+                              </div>  
+                            </div>
+                            <br>
+                            <div class="d-flex justify-content-center">                   
+                              <button type="submit" name="submit" value="Save" class="btn btn-success">Daftar</button> 
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+{% endblock content %}
