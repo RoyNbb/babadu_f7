@@ -20,4 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('example_app.urls')),
     path('test_kualifikasi/', include('cru_test_kualifikasi.urls')),
+    path('enrolled_event/', include('rd_enrolled.urls')),
+
 ]

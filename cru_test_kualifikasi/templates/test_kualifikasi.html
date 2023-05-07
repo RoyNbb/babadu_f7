@@ -5,17 +5,17 @@
 {% endblock meta %}
 
 {% block content %}
-<div class="container" id="update_sesi_konsultasi_container" style="margin-bottom: 100px;">
-    <h1><b>Form Data Kualifikasi</b></h1>
-    <form method="post">
+<div class="container" id="test_kualifikasi" style="margin-bottom: 100px; max-width: 900px;">
+    <h1 style="text-align: center; padding: 3rem 0 1rem;"><b>Form Data Kualifikasi</b></h1>
+    <form method="post" >
     {% csrf_token %}
 
-        <div class="form-group">
+        <div class="form-group" style="padding: 1rem 0 .25rem;">
             <label for="no_batch">No Batch</label>
             <input class="form-control" id="no_batch" name="no-batch" type="text" placeholder="No Batch">
         </div> 
 
-        <div class="form-group">
+        <div class="form-group" style="padding: 1rem 0 .25rem;">
             <label for="no_rekam_medis">Tempat Pelaksanaan</label>
             <select class="form-select" aria-label="Default select example">
                 <option selected>Pilih Tempat</option>
@@ -26,7 +26,7 @@
             {% comment %} <input class="form-control" id="no_rekam_medis" name="no_rekam_medis" type="text" placeholder="{{ row_sesi_konsultasi.no_rekam_medis_pasien }}" disabled> {% endcomment %}
         </div>
 
-        <div class="form-group">
+        <div class="form-group" style="padding: 1rem 0 .75rem;">
             <label for="tanggal">Tanggal Pelaksanaan</label>
             <select class="form-select" aria-label="Default select example">
                 <option selected>Pilih Tanggal</option>
@@ -39,7 +39,7 @@
                 $('#datepicker').datepicker({ format: 'yyyy-mm-dd' });
             </script> {% endcomment %}
         </div>
-        <button class="btn btn-primary" type="submit">NEXT</button>
+        <button class="btn btn-primary" type="submit" style="padding: .75rem; margin-top: 0.75rem;">Next</button>
     </form>
 </div>
 {% endblock %}

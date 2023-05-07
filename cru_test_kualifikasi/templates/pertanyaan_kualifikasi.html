@@ -3,34 +3,34 @@
 {% block title %}Pertanyaan Kualifikasi{% endblock %}
 
 {% block content %}
-<div class="container" id="update_sesi_konsultasi_container" style="margin-bottom: 100px;">
-    <h1><b>Form Data Kualifikasi</b></h1>
+<div class="container" id="pertanyaan_kualifikasi" style="margin-bottom: 100px; ">
+    <h1 style="text-align: center; padding: 3rem 0 1rem;"><b>Pertanyaan Kualifikasi</b></h1>
     <form method="post">
     {% csrf_token %}
     <form>
-        <div class="row">
-          <legend class="col-form-label col-sm-2 pt-0">Apa nama asosiasi persatuan badminton Indonesia? </legend>
+        <div class="row" style="padding-right: 30%; padding-left: 30%; margin-bottom: 1.5rem" >
+          <legend class="col-form-label col-sm-2 pt-0" style="width:100%">Apa nama asosiasi persatuan badminton Indonesia? </legend>
           <div class="col-sm-10">
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="jawaban1" checked>
+              <input class="form-check-input" type="radio" name="pilihan1" id="gridRadios1" value="jawaban1" checked>
               <label class="form-check-label" for="gridRadios1">
                 PBSI
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="jawaban2">
+              <input class="form-check-input" type="radio" name="pilihan1" id="gridRadios2" value="jawaban2">
               <label class="form-check-label" for="gridRadios2">
                 PRSI
               </label>
             </div>
             <div class="form-check ">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="jawaban3">
+              <input class="form-check-input" type="radio" name="pilihan1" id="gridRadios3" value="jawaban3">
               <label class="form-check-label" for="gridRadios3">
                 PSSI
               </label>
             </div>
             <div class="form-check ">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="jawaban4">
+                <input class="form-check-input" type="radio" name="pilihan1" id="gridRadios3" value="jawaban4">
                 <label class="form-check-label" for="gridRadios3">
                   PERBASI
                 </label>
@@ -38,29 +38,29 @@
           </div>
         </div>
 
-        <div class="row">
-          <legend class="col-form-label col-sm-2 pt-0">Siapakah salah satu legenda badminton dari Indonesia? </legend>
+        <div class="row" style="padding-right: 30%; padding-left: 30%; margin-bottom: 1.5rem">
+          <legend class="col-form-label col-sm-2 pt-0" style="width:100%">Siapakah salah satu legenda badminton dari Indonesia? </legend>
           <div class="col-sm-10">
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="jawaban1" checked>
+              <input class="form-check-input" type="radio" name="pilihan 2" id="gridRadios1" value="jawaban1" checked>
               <label class="form-check-label" for="gridRadios1">
                 Lee Chong Wei
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="jawaban2">
+              <input class="form-check-input" type="radio" name="pilihan2" id="gridRadios2" value="jawaban2">
               <label class="form-check-label" for="gridRadios2">
                 Lin Dan
               </label>
             </div>
             <div class="form-check ">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="jawaban3">
+              <input class="form-check-input" type="radio" name="pilihan2" id="gridRadios3" value="jawaban3">
               <label class="form-check-label" for="gridRadios3">
                 Peter Gede
               </label>
             </div>
             <div class="form-check ">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="jawaban4">
+                <input class="form-check-input" type="radio" name="pilihan2" id="gridRadios3" value="jawaban4">
                 <label class="form-check-label" for="gridRadios3">
                   Taufik Hidayat
                 </label>
@@ -68,29 +68,29 @@
           </div>
         </div>
 
-        <div class="row">
-          <legend class="col-form-label col-sm-2 pt-0">Kapan terkahir kali Indonesia menjuarai Piala Thomas Cup? </legend>
+        <div class="row" style="padding-right: 30%; padding-left: 30%; margin-bottom: 1.5rem">
+          <legend class="col-form-label col-sm-2 pt-0" style="width:100%">Kapan terkahir kali Indonesia menjuarai Piala Thomas Cup? </legend>
           <div class="col-sm-10">
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="jawaban1" checked>
+              <input class="form-check-input" type="radio" name="pilihan3" id="gridRadios1" value="jawaban1" checked>
               <label class="form-check-label" for="gridRadios1">
                 2022
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="jawaban2">
+              <input class="form-check-input" type="radio" name="pilihan3" id="gridRadios2" value="jawaban2">
               <label class="form-check-label" for="gridRadios2">
                2018
               </label>
             </div>
             <div class="form-check ">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="jawaban3">
+              <input class="form-check-input" type="radio" name="pilihan3" id="gridRadios3" value="jawaban3">
               <label class="form-check-label" for="gridRadios3">
                 2016
               </label>
             </div>
             <div class="form-check ">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="jawaban4">
+                <input class="form-check-input" type="radio" name="pilihan3" id="gridRadios3" value="jawaban4">
                 <label class="form-check-label" for="gridRadios3">
                   2020
                 </label>
@@ -98,59 +98,29 @@
           </div>
         </div>
 
-        <div class="row">
-          <legend class="col-form-label col-sm-2 pt-0">Siapakah Ganda Putra dengan peringkat tertinggi saat ini dari Indonesia? </legend>
+        <div class="row" style="padding-right: 30%; padding-left: 30%; margin-bottom: 1.5rem">
+          <legend class="col-form-label col-sm-2 pt-0" style="width:100%">Siapakah peraih emas Olimpiade Tokyo 2020? </legend>
           <div class="col-sm-10">
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="jawaban1" checked>
-              <label class="form-check-label" for="gridRadios1">
-                Marcus & Kevin
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="jawaban2">
-              <label class="form-check-label" for="gridRadios2">
-               Fajar & Rian
-              </label>
-            </div>
-            <div class="form-check ">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="jawaban3">
-              <label class="form-check-label" for="gridRadios3">
-                Ahsan & Hendra
-              </label>
-            </div>
-            <div class="form-check ">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="jawaban4">
-                <label class="form-check-label" for="gridRadios3">
-                  Pramudya & Yeremia
-                </label>
-              </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <legend class="col-form-label col-sm-2 pt-0">Siapakah peraih emas Olimpiade Tokyo 2020? </legend>
-          <div class="col-sm-10">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="jawaban1" checked>
+              <input class="form-check-input" type="radio" name="pilihan4" id="gridRadios1" value="jawaban1" checked>
               <label class="form-check-label" for="gridRadios1">
                 Anthony Sinisuka Ginting
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="jawaban2">
+              <input class="form-check-input" type="radio" name="pilihan4" id="gridRadios2" value="jawaban2">
               <label class="form-check-label" for="gridRadios2">
                Tontowi Ahmad & Liliyana Natsir
               </label>
             </div>
             <div class="form-check ">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="jawaban3">
+              <input class="form-check-input" type="radio" name="pilihan4" id="gridRadios3" value="jawaban3">
               <label class="form-check-label" for="gridRadios3">
                 Mohammad Ahsan & Hendra Setiawan
               </label>
             </div>
             <div class="form-check ">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="jawaban4">
+                <input class="form-check-input" type="radio" name="pilihan4" id="gridRadios3" value="jawaban4">
                 <label class="form-check-label" for="gridRadios3">
                   Greysia Polii & Apriyani Rahayu
                 </label>
@@ -158,35 +128,37 @@
           </div>
         </div>
 
-        <div class="row">
-          <legend class="col-form-label col-sm-2 pt-0">Siapakah yang merupakan atlet tunggal putri dari Indonesia?</legend>
+        <div class="row" style="padding-right: 30%; padding-left: 30%; margin-bottom: 1.5rem">
+          <legend class="col-form-label col-sm-2 pt-0" style="width:100%" >Siapakah yang merupakan atlet tunggal putri dari Indonesia?</legend>
           <div class="col-sm-10">
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="jawaban1" checked>
+              <input class="form-check-input" type="radio" name="pilihan5" id="gridRadios1" value="jawaban1" checked>
               <label class="form-check-label" for="gridRadios1">
                 Liliyana Natsir
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="jawaban2">
+              <input class="form-check-input" type="radio" name="pilihan5" id="gridRadios2" value="jawaban2">
               <label class="form-check-label" for="gridRadios2">
                Apriyani Rahayu
               </label>
             </div>
             <div class="form-check ">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="jawaban3">
+              <input class="form-check-input" type="radio" name="pilihan5" id="gridRadios3" value="jawaban3">
               <label class="form-check-label" for="gridRadios3">
                 Gregoria Mariska Tunjung
               </label>
             </div>
             <div class="form-check ">
-                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="jawaban4">
+                <input class="form-check-input" type="radio" name="pilihan5" id="gridRadios3" value="jawaban4">
                 <label class="form-check-label" for="gridRadios3">
                   Ribka Sugiarto
                 </label>
               </div>
           </div>
         </div>
+
+        <button class="btn btn-primary" type="submit" style="padding: .75rem; margin-top: 0.75rem; margin-left: 30%;">Submit</button>
 
 
     </form>
