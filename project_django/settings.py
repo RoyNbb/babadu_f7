@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'example_app',
-    'cru_test_kualifikasi'
+    'cru_test_kualifikasi',
+    'rd_enrolled'
 ]
 
 MIDDLEWARE = [
