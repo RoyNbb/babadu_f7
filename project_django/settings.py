@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'example_app',
+    'dashboard',
+    'Daftar_Atlet',
+    'Hasil_Pertandingan',
 ]
 
 MIDDLEWARE = [

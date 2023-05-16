@@ -1,0 +1,87 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!-- #Navbar Atlet -->
+{% if role == "atlet" %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+	<div class="container-fluid">
+	  <a class="navbar-brand" href="#">Babadu App</a>
+	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+		<ul class="navbar-nav">
+		  <li class="nav-item">
+			<a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">Tes Kualifikasi</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">Daftar Event</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">Enrolled Event</a>
+		  </li> 
+		  <li class="nav-item">
+			<a class="nav-link" href="#">Daftar Sponsor</a>
+		  </li>
+		</ul>
+		<button class="btn btn-danger navbar-btn">Log Out</button>
+	  </div>
+	</div>
+  </nav>
+
+{% elif role == "pelatih" %}
+  <!-- #Navbar Pelatih -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+	  <div class="container-fluid">
+		<a class="navbar-brand" href="#">Babadu App</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+		  <ul class="navbar-nav">
+			<li class="nav-item">
+			  <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Daftar Atlet</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">List Atlet</a>
+			</li>
+		  </ul>
+		  <button class="btn btn-danger navbar-btn">Log Out</button>
+		</div>
+	  </div>
+	</nav>
+
+{% else %}
+	<!-- #Navbar Umpire -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<div class="container-fluid">
+		  <a class="navbar-brand" href="#">Babadu App</a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+			<ul class="navbar-nav">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Daftar Atlet</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Lihat Event</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Hasil Pertandingan</a>
+			  </li> 
+			</ul>
+			<button class="btn btn-danger navbar-btn">Log Out</button>
+		  </div>
+		</div>
+	  </nav>
+
+{% endif %}

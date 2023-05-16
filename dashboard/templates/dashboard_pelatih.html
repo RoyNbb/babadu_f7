@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+
+{% block meta %}
+<style>
+   .row {
+        width: 100%;
+        background-color: #ffffff;
+        display: flex;
+        column-gap: 4px;
+        align-items: center;
+   }
+   .label {
+        width: 30%;
+        font-weight: 600;
+   }
+   .value {
+        flex: 1;
+   }
+
+   .bi-person-circle {
+        width: 160px;
+        height: 160px;
+    }
+</style>
+{% endblock meta %}
+
+{% block content %}
+
+
+
+<!-- <section style="background-color: #eee;"> -->
+    
+
+    <div class="row" style="width: 100%; margin: 0;">
+        
+            <div class="col-md-4 mx-auto">
+              <div class="card mb-4">
+                <h3 class="my-3 text-center" style="font-size: 2em; font-weight: bold;">Profil Pengguna</h3>
+                <div class="card-body text-center">
+                  <!-- <img src="https://cdn-icons-png.flaticon.com/512/5987/5987420.png" alt="avatar"
+                    class="rounded-circle img-fluid" style="width: 150px;"> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                      </svg>
+                  <h5 class="my-3">{{nama}}</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 mx-auto">
+              <div class="card mb-4" style="margin-top: 20px;">
+                <div class="card-body">
+                  <div class="row" >
+                    <div class="col-sm-3">
+                        <p class="mb-0">Negara</p>
+                    </div>
+                    <div class="col-sm-9">
+                        <p class="text-muted mb-0">{{negara}}</p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                        <p class="mb-0">Email</p>
+                    </div>
+                    <div class="col-sm-9">
+                        <p class="text-muted mb-0">{{email}}</p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row" >
+                    <div class="col-sm-3">
+                      <p class="mb-0">Spesialisasi Kategori</p>
+                    </div>
+                    <div class="col-sm-9">
+                      <p class="text-muted mb-0">{{spesialisasi_kategori}}</p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <p class="mb-0">Tanggal Mulai</p>
+                    </div>
+                    <div class="col-sm-9">
+                      <p class="text-muted mb-0">{{tanggal_mulai}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+</section>
+{% endblock content %}

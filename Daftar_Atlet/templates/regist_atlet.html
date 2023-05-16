@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block meta %}
+<style>
+   .row {
+        width: 100%;
+        display: flex;
+        column-gap: 4px;
+        align-items: center;
+   }
+   .label {
+        width: 30%;
+        font-weight: 600;
+   }
+   .value {
+        flex: 1;
+   }
+</style>
+{% endblock meta %}
+
+{% block content %}
+
+<section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+      <div class="row justify-content-center align-items-center h-100">
+        <div class="col-12 col-lg-9 col-xl-7">
+          <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+            <div class="card-body p-4 p-md-5">
+              <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Daftarkan Atlet</h3>
+              <form>
+  
+                <div class="row">
+                  <div class="col-12 ">
+  
+                    <select class="select form-control-lg">
+                      <option value="1" disabled selected>Pilih nama</option>
+                      <option value="2">Westleigh Pengilley</option>
+                      <option value="3">Kylie Trent</option>
+                      <option value="4">Cheryl Wynter</option>
+                      <option value="5">Myrtice Ellen</option>
+                      <option value="6">Ursuline Claris</option>
+                      <option value="7">Bradford Frisel</option>
+                      <option value="8">Tine Leguay</option>
+                      <option value="9">Alasteir Grand</option>
+                      <option value="10">Ursuline Claris</option>
+                      <option value="11">Bradford Frisel</option>
+                      <option value="12">Tine Leguay</option>
+                      <option value="13">Alasteir Grand</option>
+                      <option value="14">Jaclyn Spon</option>
+                      <option value="15">Tomas Messitt</option>
+                      <option value="16">Linc Toretta</option>
+                      <option value="17">Mirabelle Deam</option>
+                      <option value="18">Ruthe Yakunchikov</option>
+                      <option value="19">Karia Crinidge</option>
+                      <option value="20">Glenna Tesh</option>
+                    </select>
+                    <!-- <label class="form-label select-label">Nama Atlet</label> -->
+  
+                  </div>
+                </div>
+  
+                <div class="mt-4 pt-2">
+                  <input class="btn btn-primary btn-lg" type="submit" value="Submit" />
+                </div>
+  
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock content %}

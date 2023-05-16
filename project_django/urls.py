@@ -15,8 +15,21 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from dashboard.views import show_dashboard
+from Daftar_Atlet.views import show_daftarAtlet
+from Daftar_Atlet.views import show_registAtlet
+from Hasil_Pertandingan.views import show_daftar_hasil_pertandingan
+from Hasil_Pertandingan.views import show_detail_hasil_pertandingan
+
+
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('example_app.urls')),
+    path('dashboard/', show_dashboard, name='show_dashboard'),
+    path('daftar_atlet/', show_daftarAtlet, name='show_daftarAtlet'),
+    path('regist_atlet/', show_registAtlet, name='show_registAtlet'),
+    path('hasil_pertandingan/', show_daftar_hasil_pertandingan, name='show_daftar_hasil_pertandingan'),
+    path('detail_hasil_pertandingan/', show_detail_hasil_pertandingan, name='show_detail_hasil_pertandingan'),
 ]
